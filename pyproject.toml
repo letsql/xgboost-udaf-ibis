@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "xgboost-udaf-ibis"
+version = "0.1.0"
+description = ""
+authors = ["Dan Lovell <dan@letsql.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+	{ include = "letsql" },
+]
+include = [ "data.rownum.parquet" ]
+
+[tool.poetry.scripts]
+xgboost-udaf-ibis = "letsql.scripts.xgboost_udaf_ibis:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dask = "^2024.2.0"
+pandas = "^2.2.0"
+pyarrow = "^15.0.0"
+xgboost = "^2.0.3"
+datafusion = "^35.0.0"
+ibis-framework = "^8.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
