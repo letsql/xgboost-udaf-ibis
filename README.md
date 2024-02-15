@@ -13,5 +13,5 @@ xgboost-udaf-ibis
 ```
 ## via nix
 ```
-nix develop github:letsql/xgboost-udaf-ibis --command xgboost-udaf-ibis
+nix run github:letsql/xgboost-udaf-ibis
 ```

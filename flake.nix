@@ -35,5 +35,12 @@
             ];
           };
         };
+
+        apps = {
+          default = {
+            type = "app";
+            program = "${self.packages.${system}.myapp}/bin/xgboost-udaf-ibis";
+          };
+        };
       });
 }
